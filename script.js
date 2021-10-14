@@ -10,14 +10,14 @@ let ties = 0;
 
 function game(player, computer) {
     player = player.toLowerCase();
-    if(player != computer){
-        if(player == "paper" && computer == "rock"){
+    if (player != computer) {
+        if (player == "paper" && computer == "rock") {
             console.log(player + " beats " + computer + ". Player wins");
             playerWins++;
-        } else if(player == "rock" && computer == "scissors") {
+        } else if (player == "rock" && computer == "scissors") {
             console.log(player + " beats " + computer + ". Player wins");
             playerWins++;
-        } else if(player == "scissors" && computer == "paper") {
+        } else if (player == "scissors" && computer == "paper") {
             console.log(player + " beats " + computer + ". Player wins");
             playerWins++;
         } else {
@@ -38,7 +38,7 @@ do {
 } while (playerWins < 5 && computerWins < 5);
 
 
-if(playerWins > computerWins) {
+if (playerWins > computerWins) {
     console.log("player won best of five");
 } else {
     console.log("computer won best of five");
