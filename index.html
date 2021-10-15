@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-</head>
-<body>
-    
-</body>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Rock, Paper, Scissors</title>
+    <script src='game.js' defer></script>
+    <link rel='stylesheet' href='style.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body>
+    <h1 class='text'>ROCK PAPER SCISSORS</h1>
+    <p class='text'>
+      It's you against the computer. First one to win five games will be the
+      victor. Choose wisely!
+    </p>
+    <div id='hands'>
+        <div id='rock' class='handdiv'><img src='images/Rock-paper-scissors_(rock).png' alt='rock' class='hand'></div>
+        <div id='paper' class='handdiv'><img src='images/Rock-paper-scissors_(paper).png' alt='paper' class='hand'></div>
+        <div id='scissors' class='handdiv'><img src='images/Rock-paper-scissors_(scissors).png' alt='scissors' class='hand'></div>
+    </div>
+    <div id='scores'>
+        <table class='text'>
+            <tr>
+            <th>Player Score</th>
+            <th>Computer Score</th>
+            <th>Ties</th>
+            </tr>
+            <tr>
+                <td id='player-score'>0</td>
+                <td id='computer-score'>0</td>
+                <td id='ties'>0</td>
+            </tr>
+        </table>
+    </div>
+    <div id='choice' class='text'></div>
+  </body>
 </html>
